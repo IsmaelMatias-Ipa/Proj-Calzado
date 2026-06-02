@@ -1,0 +1,60 @@
+readme_content = """# Blueprint del Proyecto: Sistema AI de Medición y Marketplace de Calzado
+
+Este documento sirve como la especificación técnica y guía de desarrollo (Prompt Maestro) para ser procesado por un editor de código con Inteligencia Artificial (ej. Cursor, Windsurf, Copilot) o agentes autónomos de desarrollo. Contiene la arquitectura completa, estructura de archivos, definición de endpoints y el flujo paso a paso para construir la aplicación web utilizando **FastAPI** en el backend y **Vue.js 3** en el frontend.
+
+---
+
+## 🚀 Información General y Arquitectura
+
+El sistema consiste en una plataforma web que permite a los usuarios calcular su talla exacta de calzado mediante una fotografía de su pie procesada por IA, visualizar un catálogo consolidado de múltiples tiendas externas filtrado automáticamente por su talla y suscribirse a un modelo premium mediante pagos mensuales.
+
+### Stack Tecnológico
+* **Frontend:** Vue.js 3 (Composition API), Vite, Vue Router (Enrutamiento), Pinia (Gestión de estado global).
+* **Backend:** Python 3.10+, FastAPI (Framework asíncrono), Uvicorn (Servidor ASGI), HTTPX (Para consumo asíncrono de APIs externas), Pydantic v2 (Validación de datos).
+* **Arquitectura:** BFF (Backend-For-Frontend). FastAPI actúa como orquestador centralizado, gestionando la comunicación con el microservicio de IA, agregando catálogos de tiendas externas y procesando pasarelas de pago de forma segura.
+
+---
+
+## 📂 Estructura de Directorios Propuesta
+
+Archivo listo
+
+```text
+shoeflow-project/
+│
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py                 # Punto de entrada de FastAPI
+│   │   ├── core/
+│   │   │   ├── config.py           # Variables de entorno y seguridad
+│   │   │   └── security.py         # Configuración de JWT
+│   │   ├── schemas/                # Modelos de validación Pydantic
+│   │   │   ├── measure.py
+│   │   │   ├── store.py
+│   │   │   └── payment.py
+│   │   └── routers/                # Controladores divididos por módulos
+│   │       ├── measure.py          # Comunicación con microservicio de IA
+│   │       ├── stores.py           # Agregador de APIs de tiendas
+│   │       ├── auth.py             # Autenticación Google/Facebook OAuth
+│   │       └── payments.py         # Gestión de pasarela de suscripciones
+│   ├── requirements.txt
+│   └── .env
+│
+├── frontend/
+│   ├── src/
+│   │   ├── main.js                 # Inicialización de Vue 3
+│   │   ├── App.vue
+│   │   ├── router/
+│   │   │   └── index.js            # Configuración de las 4 vistas
+│   │   ├── stores/
+│   │   │   └── userStore.js        # Estado global (Talla, Auth, Tokens)
+│   │   ├── components/             # Componentes reutilizables (UI)
+│   │   └── views/                  # Las 4 vistas principales obligatorias
+│   │       ├── HomeView.vue        # Vista 1: Presentación
+│   │       ├── ScannerView.vue     # Vista 2: Cámara y procesamiento de IA
+│   │       ├── CatalogView.vue     # Vista 3: Listado de tiendas y categorías
+│   │       └── CheckoutView.vue    # Vista 4: Login Social y Pago de suscripción
+│   ├── package.json
+│   └── vite.config.js
+└── e2e-tests/                      # Directorio para pruebas de integración automatizadas
