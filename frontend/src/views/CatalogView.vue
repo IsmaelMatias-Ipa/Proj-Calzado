@@ -28,12 +28,22 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
+import { useUserStore } from "../stores/userStore";
 
+const store = useUserStore();
 const size = ref("");
 const items = ref([]);
 const loaded = ref(false);
 const error = ref("");
+
+onMounted(() => {
+  if (store.shoeSize) {
+    size.value = store.shoeSize;
+    loadCatalog();
+  }
+});
+
 
 async function loadCatalog() {
   error.value = "";

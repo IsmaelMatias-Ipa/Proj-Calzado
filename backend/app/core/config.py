@@ -1,4 +1,5 @@
-from pydantic import AnyHttpUrl, BaseSettings
+from pydantic import AnyHttpUrl
+from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
@@ -6,6 +7,7 @@ class Settings(BaseSettings):
     ai_service_url: AnyHttpUrl = "https://example.com/ai"
     store_catalog_url: AnyHttpUrl = "https://example.com/catalog"
     stripe_api_key: str = ""
+    gemini_api_key: str = ""
     jwt_secret_key: str = "supersecret"
     jwt_algorithm: str = "HS256"
     access_token_expire_minutes: int = 60
