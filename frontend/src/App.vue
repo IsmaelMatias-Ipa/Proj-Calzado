@@ -16,9 +16,9 @@
 
 <style>
 :root {
-  color-scheme: dark;
-  color: #e8f0ff;
-  background: #080b12;
+  color-scheme: light;
+  color: #111111;
+  background: #f8f2e6;
   font-family: Inter, system-ui, sans-serif;
 }
 *, *::before, *::after {
@@ -27,10 +27,8 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: radial-gradient(circle at top left, rgba(45, 90, 255, 0.18), transparent 25%),
-    radial-gradient(circle at bottom right, rgba(10, 255, 200, 0.14), transparent 20%),
-    linear-gradient(180deg, #040611 0%, #0d1121 60%, #121827 100%);
-  color: #eef2ff;
+  background: linear-gradient(180deg, #fbf5ed 0%, #f3e2cf 100%);
+  color: #111111;
   overflow-x: hidden;
 }
 #app {
@@ -43,13 +41,12 @@ body {
   gap: 1rem;
   padding: 1rem 1.5rem;
   margin: 0 auto;
-  backdrop-filter: blur(18px);
-  background: rgba(14, 18, 34, 0.72);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
 .toolbar a {
-  color: #d7e2ff;
+  color: #111111;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -60,8 +57,8 @@ body {
 }
 .toolbar a:hover,
 .toolbar a.router-link-active {
-  background: rgba(78, 152, 255, 0.2);
-  color: #ffffff;
+  background: #111111;
+  color: #f8f2e6;
   transform: translateY(-2px);
 }
 main {
@@ -79,25 +76,28 @@ button {
   border: none;
   border-radius: 999px;
   transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, opacity 0.18s ease;
+  background: #111111;
+  color: #f8f2e6;
 }
 button:hover {
   transform: translateY(-1px);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.14);
 }
 button:active {
   transform: translateY(1px);
 }
 input,
 select {
-  background: rgba(255, 255, 255, 0.06);
-  color: #eef2ff;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+  background: #ffffff;
+  color: #111111;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
 }
 input:focus,
 select:focus {
   outline: none;
-  border-color: rgba(64, 152, 255, 0.75);
-  box-shadow: 0 0 0 0.3rem rgba(45, 105, 255, 0.16);
+  border-color: rgba(0, 0, 0, 0.24);
+  box-shadow: 0 0 0 0.3rem rgba(0, 0, 0, 0.08);
 }
 @keyframes pageFade {
   from {
@@ -111,10 +111,10 @@ select:focus {
 }
 @keyframes glowPulse {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(79, 146, 255, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
   50% {
-    box-shadow: 0 0 35px 0 rgba(79, 146, 255, 0.16);
+    box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.08);
   }
 }
 </style>

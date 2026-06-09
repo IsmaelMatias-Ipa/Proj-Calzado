@@ -239,8 +239,8 @@ section {
 .calibration-guide {
   margin-top: 1.25rem;
   padding: 1.25rem 1.5rem;
-  background: rgba(45, 90, 255, 0.08);
-  border: 1px solid rgba(45, 90, 255, 0.2);
+  background: #fff5ec;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 24px;
 }
 .guide-header {
@@ -252,7 +252,7 @@ section {
 .guide-header h3 {
   margin: 0;
   font-size: 1rem;
-  color: #e8f0ff;
+  color: #111111;
   font-weight: 700;
 }
 .guide-list {
@@ -267,12 +267,12 @@ section {
   align-items: flex-start;
   gap: 0.65rem;
   font-size: 0.88rem;
-  color: #cdd8ff;
+  color: #4a4a4a;
   line-height: 1.45;
 }
 .step-num {
-  background: #3567ff;
-  color: #fff;
+  background: #111111;
+  color: #ffffff;
   font-size: 0.72rem;
   font-weight: bold;
   width: 17px;
@@ -287,21 +287,22 @@ section {
 h1 {
   font-size: clamp(2rem, 3vw, 2.8rem);
   margin-bottom: 0.5rem;
+  color: #111111;
 }
 p {
-  color: #c3d0ff;
+  color: #4a4a4a;
   line-height: 1.75;
 }
 .tabs {
   display: flex;
   gap: 0.75rem;
   margin-top: 1.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   padding-bottom: 0.75rem;
 }
 .tabs button {
   background: transparent;
-  color: #a4b3e6;
+  color: #3d3d3d;
   border: none;
   font-size: 0.95rem;
   font-weight: 600;
@@ -313,25 +314,25 @@ p {
   align-self: auto;
 }
 .tabs button:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.04);
+  color: #111111;
+  background: rgba(0, 0, 0, 0.04);
 }
 .tabs button.active {
-  color: #fff;
-  background: rgba(78, 152, 255, 0.16);
-  border: 1px solid rgba(78, 152, 255, 0.3);
+  color: #f8f2e6;
+  background: #111111;
+  border: 1px solid rgba(0, 0, 0, 0.12);
 }
 .physical-data-card {
   margin-top: 1.5rem;
   padding: 1.25rem 1.5rem;
-  background: rgba(16, 23, 45, 0.5);
-  border: 1px solid rgba(123, 145, 255, 0.14);
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 20px;
 }
 .physical-data-card h3 {
   margin: 0 0 1rem 0;
   font-size: 0.95rem;
-  color: #d1dcff;
+  color: #111111;
 }
 .physical-inputs {
   display: flex;
@@ -343,7 +344,7 @@ p {
   min-width: 140px;
   display: grid;
   gap: 0.5rem;
-  color: #a4b3e6;
+  color: #3d3d3d;
   font-size: 0.85rem;
 }
 .inline-label input {
@@ -363,8 +364,8 @@ p {
   align-items: center;
   justify-content: center;
   min-height: 240px;
-  background: rgba(16, 23, 45, 0.84);
-  border: 2px dashed rgba(123, 145, 255, 0.25);
+  background: #ffffff;
+  border: 2px dashed rgba(0, 0, 0, 0.14);
   border-radius: 28px;
   cursor: pointer;
   padding: 2rem;
@@ -374,8 +375,8 @@ p {
 }
 .dropzone:hover,
 .dropzone.dragging {
-  border-color: rgba(75, 164, 255, 0.8);
-  background-color: rgba(20, 29, 56, 0.88);
+  border-color: rgba(0, 0, 0, 0.24);
+  background-color: #fff8f2;
 }
 .dropzone.dragging {
   transform: scale(0.99);
@@ -388,33 +389,33 @@ p {
 .dropzone-prompt p {
   font-weight: 600;
   margin: 0 0 0.5rem 0;
-  color: #eef2ff;
+  color: #111111;
 }
 .file-limits {
   font-size: 0.85rem;
-  color: #8b99c7;
+  color: #5b5b5b;
 }
 .image-preview {
   max-width: 100%;
   max-height: 220px;
   border-radius: 18px;
   object-fit: contain;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 .btn-scan {
   align-self: center;
   padding: 0.95rem 2.2rem;
-  background: linear-gradient(135deg, #3567ff, #1ab7d3);
-  color: #fff;
+  background: #111111;
+  color: #f8f2e6;
   font-weight: 700;
-  box-shadow: 0 18px 30px rgba(7, 81, 190, 0.24);
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   border-radius: 999px;
   border: none;
   font-size: 1rem;
 }
 .btn-scan:hover {
-  box-shadow: 0 24px 40px rgba(7, 81, 190, 0.32);
+  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.2);
 }
 .btn-scan:disabled {
   opacity: 0.5;
@@ -426,10 +427,10 @@ form {
   gap: 1rem;
   margin-top: 1.5rem;
   padding: 1.5rem;
-  background: rgba(16, 23, 45, 0.84);
-  border: 1px solid rgba(123, 145, 255, 0.18);
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 28px;
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.1);
   transition: transform 0.28s ease, box-shadow 0.28s ease;
 }
 form:hover {
@@ -438,33 +439,33 @@ form:hover {
 label {
   display: grid;
   gap: 0.5rem;
-  color: #d2dcff;
+  color: #111111;
 }
 input {
   width: 100%;
   min-height: 3rem;
   padding: 0.95rem 1rem;
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.04);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
-  color: #eef2ff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+  color: #111111;
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 input:focus {
-  border-color: rgba(75, 164, 255, 0.8);
-  box-shadow: 0 0 0 0.3rem rgba(73, 160, 255, 0.18);
+  border-color: rgba(0, 0, 0, 0.24);
+  box-shadow: 0 0 0 0.3rem rgba(0, 0, 0, 0.08);
 }
 button[type="submit"] {
   align-self: start;
   padding: 0.95rem 1.4rem;
-  background: linear-gradient(135deg, #3567ff, #1ab7d3);
-  color: #fff;
-  box-shadow: 0 18px 30px rgba(7, 81, 190, 0.24);
+  background: #111111;
+  color: #f8f2e6;
+  box-shadow: 0 18x 30px rgba(0, 0, 0, 0.16);
   font-weight: 600;
 }
 button[type="submit"]:hover {
-  box-shadow: 0 24px 40px rgba(7, 81, 190, 0.32);
+  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.2);
 }
 .samples {
   display: flex;
@@ -475,50 +476,49 @@ button[type="submit"]:hover {
 }
 .samples span {
   font-size: 0.85rem;
-  color: #a4b3e6;
+  color: #5b5b5b;
   margin-right: 0.5rem;
 }
 .btn-sample {
   padding: 0.4rem 0.8rem;
   font-size: 0.8rem;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #cdd8ff;
+  background: #f7efe5;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #111111;
   cursor: pointer;
   box-shadow: none;
   align-self: auto;
 }
 .btn-sample:hover {
-  background: rgba(75, 164, 255, 0.2);
-  border-color: rgba(75, 164, 255, 0.4);
-  color: #fff;
-  box-shadow: none;
+  background: #111111;
+  border-color: rgba(0, 0, 0, 0.14);
+  color: #f8f2e6;
 }
 .result-card {
   margin-top: 1.75rem;
   padding: 1.5rem;
   border-radius: 24px;
-  background: rgba(21, 32, 59, 0.9);
-  border: 1px solid rgba(180, 210, 255, 0.16);
-  box-shadow: 0 20px 50px rgba(6, 18, 42, 0.24);
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .result-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 28px 60px rgba(6, 18, 42, 0.28);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.1);
 }
 .result-card h2 {
   margin: 0 0 0.85rem;
-  color: #f5f9ff;
+  color: #111111;
 }
 .result-card p {
   margin: 0.45rem 0;
-  color: #b7c6ef;
+  color: #4a4a4a;
 }
 .error {
   margin-top: 1rem;
-  color: #ff6d85;
+  color: #a32121;
 }
 .checkbox-label {
   display: flex;
@@ -537,7 +537,7 @@ button[type="submit"]:hover {
 }
 .checkbox-label span {
   font-size: 0.9rem;
-  color: #d1dcff;
+  color: #111111;
   font-weight: 500;
 }
 @keyframes fadeInUp {

@@ -136,9 +136,10 @@ section {
 h1 {
   font-size: clamp(2rem, 3vw, 2.8rem);
   margin-bottom: 0.3rem;
+  color: #111111;
 }
 p {
-  color: #c9d4ff;
+  color: #4a4a4a;
   line-height: 1.7;
 }
 form,
@@ -148,9 +149,9 @@ form,
   margin-top: 1.5rem;
   padding: 1.8rem;
   border-radius: 28px;
-  background: rgba(18, 27, 48, 0.88);
-  border: 1px solid rgba(120, 175, 255, 0.16);
-  box-shadow: 0 28px 70px rgba(4, 7, 24, 0.22);
+  background: #fff8f0;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.08);
   transition: transform 0.28s ease, box-shadow 0.28s ease;
 }
 form:hover,
@@ -160,7 +161,7 @@ form:hover,
 .auth-card h2 {
   margin: 0;
   font-size: 1.4rem;
-  color: #f5f9ff;
+  color: #111111;
 }
 .auth-buttons {
   display: flex;
@@ -174,44 +175,43 @@ form:hover,
   justify-content: center;
   padding: 0.85rem 1.4rem;
   border-radius: 14px;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   font-weight: 600;
   font-size: 0.95rem;
   cursor: pointer;
   transition: background 0.2s, transform 0.2s;
-  color: #ffffff;
+  color: #111111;
   flex: 1;
   min-width: 200px;
+  background: #ffffff;
 }
 .btn-auth.google {
-  background: #ea4335;
-  box-shadow: 0 8px 20px rgba(234, 67, 53, 0.25);
+  color: #111111;
 }
 .btn-auth.google:hover {
-  background: #f05448;
+  background: #f4e5db;
 }
 .btn-auth.facebook {
-  background: #1877f2;
-  box-shadow: 0 8px 20px rgba(24, 119, 242, 0.25);
+  color: #111111;
 }
 .btn-auth.facebook:hover {
-  background: #2b84f3;
+  background: #f4e5db;
 }
 .user-badge {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.85rem 1.2rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 16px;
   margin-top: 1rem;
 }
 .user-badge strong {
-  color: #79abff;
+  color: #111111;
 }
 .btn-logout {
-  color: #ff7caf;
+  color: #111111;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 600;
@@ -221,9 +221,9 @@ form:hover,
 }
 .stripe-simulation-notice {
   font-size: 0.85rem;
-  color: #7ce7ff;
-  background: rgba(124, 231, 255, 0.08);
-  border: 1px dashed rgba(124, 231, 255, 0.25);
+  color: #4f4f4f;
+  background: #f7efe5;
+  border: 1px dashed rgba(0, 0, 0, 0.08);
   padding: 0.75rem 1rem;
   border-radius: 12px;
   display: flex;
@@ -232,7 +232,7 @@ form:hover,
 label {
   display: grid;
   gap: 0.55rem;
-  color: #d1d9ff;
+  color: #111111;
 }
 input,
 select {
@@ -240,36 +240,35 @@ select {
   min-height: 3rem;
   padding: 1rem 1.1rem;
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.04);
-  color: #eef2ff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+  color: #111111;
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 input:focus,
 select:focus {
   outline: none;
-  border-color: rgba(72, 164, 255, 0.8);
-  box-shadow: 0 0 0 0.28rem rgba(72, 164, 255, 0.16);
+  border-color: rgba(0, 0, 0, 0.24);
+  box-shadow: 0 0 0 0.28rem rgba(0, 0, 0, 0.08);
 }
 button[type="submit"] {
   width: fit-content;
   padding: 1rem 1.6rem;
-  background: radial-gradient(circle at top left, #39f2ff, #3366ff 60%);
-  color: #021028;
+  background: #111111;
+  color: #f8f2e6;
   font-weight: 700;
-  box-shadow: 0 22px 40px rgba(17, 95, 223, 0.28);
-  cursor: pointer;
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.18);
 }
 button[type="submit"]:hover {
-  box-shadow: 0 26px 46px rgba(17, 95, 223, 0.34);
+  background: #000000;
 }
 .message {
   margin-top: 1rem;
-  color: #83ffc7;
+  color: #111111;
 }
 .error {
   margin-top: 1rem;
-  color: #ff7caf;
+  color: #b00020;
 }
 @keyframes fadeInUp {
   from {

@@ -80,9 +80,10 @@ section {
 h1 {
   font-size: clamp(2rem, 3vw, 2.8rem);
   margin-bottom: 0.4rem;
+  color: #111111;
 }
 p {
-  color: #c6d3ff;
+  color: #4a4a4a;
   line-height: 1.75;
 }
 .search-row {
@@ -99,30 +100,30 @@ label {
   display: grid;
   gap: 0.5rem;
   min-width: 220px;
-  color: #d1dbff;
+  color: #232323;
 }
 input {
   width: 100%;
   padding: 0.95rem 1rem;
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.05);
-  color: #eef2ff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+  color: #111111;
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 input:focus {
-  border-color: rgba(80, 176, 255, 0.75);
-  box-shadow: 0 0 0 0.28rem rgba(80, 176, 255, 0.14);
+  border-color: rgba(0, 0, 0, 0.24);
+  box-shadow: 0 0 0 0.28rem rgba(0, 0, 0, 0.08);
 }
 button {
   padding: 0.95rem 1.4rem;
   border-radius: 999px;
-  background: linear-gradient(135deg, #31d0ff, #5f6bff);
-  color: #fff;
-  box-shadow: 0 18px 30px rgba(28, 97, 216, 0.24);
+  background: #111111;
+  color: #f8f2e6;
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.18);
 }
 button:hover {
-  box-shadow: 0 24px 40px rgba(28, 97, 216, 0.32);
+  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.22);
 }
 .grid {
   display: grid;
@@ -135,16 +136,16 @@ article {
   gap: 0.9rem;
   overflow: hidden;
   border-radius: 28px;
-  background: rgba(12, 18, 34, 0.84);
-  border: 1px solid rgba(110, 160, 255, 0.16);
-  box-shadow: 0 34px 80px rgba(1, 11, 25, 0.25);
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 34px 80px rgba(0, 0, 0, 0.08);
   padding: 1.3rem;
   transition: transform 0.26s ease, border-color 0.26s ease, box-shadow 0.26s ease;
 }
 article:hover {
   transform: translateY(-4px);
-  border-color: rgba(96, 176, 255, 0.32);
-  box-shadow: 0 42px 95px rgba(2, 11, 30, 0.3);
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: 0 42px 95px rgba(0, 0, 0, 0.12);
 }
 article img {
   width: 100%;
@@ -156,20 +157,20 @@ article img {
 article h3 {
   margin: 0;
   font-size: 1.1rem;
-  color: #f7f9ff;
+  color: #111111;
 }
 article p {
   margin: 0;
-  color: #b9c7ff;
+  color: #444444;
 }
 article a {
-  color: #82caff;
-  text-decoration: none;
+  color: #111111;
+  text-decoration: underline;
   font-weight: 600;
 }
 .empty-state {
   margin-top: 1.5rem;
-  color: #9fb3ff;
+  color: #5b5b5b;
 }
 @keyframes fadeInUp {
   from {
