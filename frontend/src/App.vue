@@ -1,10 +1,15 @@
 <template>
   <div id="app">
     <header class="toolbar">
-      <router-link to="/">Home</router-link>
-      <router-link to="/scanner">Escáner</router-link>
-      <router-link to="/catalog">Catálogo</router-link>
-      <router-link to="/checkout">Checkout</router-link>
+      <div class="logo-container">
+        <img src="/img/logo de Proyecto-Calzado.png" alt="Logo" class="logo" />
+      </div>
+      <nav class="nav-links">
+        <router-link to="/">Home</router-link>
+        <router-link to="/scanner">Escáner</router-link>
+        <router-link to="/catalog">Catálogo</router-link>
+        <router-link to="/checkout">Checkout</router-link>
+      </nav>
     </header>
     <main>
       <router-view />
@@ -36,14 +41,35 @@ body {
 }
 .toolbar {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.75rem 1.5rem;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.logo {
+  height: 50px;
+  max-width: 150px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.22s ease;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: auto;
 }
 .toolbar a {
   color: #111111;
