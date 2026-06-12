@@ -49,6 +49,7 @@ body {
   background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  position: relative;
 }
 .logo-container {
   display: flex;
@@ -69,7 +70,9 @@ body {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-left: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .toolbar a {
   color: #111111;

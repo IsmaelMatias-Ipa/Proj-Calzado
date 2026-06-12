@@ -41,7 +41,7 @@ MOCK_PRODUCTS = [
 async def get_stores(size: str):
     try:
         async with httpx.AsyncClient() as client:
-            response = await client.get(settings.store_catalog_url, params={"size": size})
+            response = await client.get(str(settings.store_catalog_url), params={"size": size})
             response.raise_for_status()
             data = response.json()
             items = [StoreItem(**item) for item in data.get("items", [])]
